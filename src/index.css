@@ -1,3 +1,97 @@
 body {
-  display: grid;
+  background-color: #edefee;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+header > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100px;
+}
+
+nav {
+  background-color: grey;
+  border-radius: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul {
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li {
+  align-items: center;
+  display: inline-block;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer div > img {
+  height: 100px;
+}
+
+.specials {
+  width: 100%;
+}
+
+.btnOnlineMenu {
+  float: right;
+}
+
+.heroImg {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+.btn-primary{
+  background-color: rgb(50, 107, 63);
+  padding: 8px
+}
+
+.btn-primary:hover{
+  background-color: rgb(81, 83, 82);
+}
+
+.heroImg {
+  width: 50px;
+  height: 50px;
+}
+
+.spHighlights {
+  text-align: center;
 }
