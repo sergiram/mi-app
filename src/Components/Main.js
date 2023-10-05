@@ -7,6 +7,7 @@ import { About } from './About'
 import { Specials } from './Specials'
 import { Testimonials } from './Testimonials'
 import { ConfirmedBooking } from './ConfirmedBooking';
+import { availableTimesByDate, fetchAPI, submitAPI } from '../api';
 
 export const Main = () => {
 
@@ -15,6 +16,10 @@ export const Main = () => {
     const reducer = (state, action) => {
         if (action.type === 'INITIALIZE_TIMES') {
             return action.payload;
+        }
+        if(action.type === 'UPDATE_TIMES'){
+            const selectedDate = action.payload;
+            return availableTimesByDate[selectedDate] || []
         }
 
         return state;
